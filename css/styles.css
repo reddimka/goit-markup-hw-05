@@ -164,7 +164,7 @@ body {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
 }
 .overlay {
   display: flex;
@@ -253,6 +253,7 @@ body {
 .box-list-item {
   width: 370px;
   height: 294px;
+  position: relative;
 }
 .description-made {
   font-weight: bold;
@@ -261,6 +262,15 @@ body {
   text-transform: uppercase;
 
   color: var(--tex-taitle-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(47, 48, 58, 0.8);
 }
 /* о команде*/
 .team-list {
@@ -440,7 +450,7 @@ body {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0px;
 }
 .footer-icon-button {
   padding-top: 6px;
