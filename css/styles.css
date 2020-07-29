@@ -489,10 +489,14 @@ body {
   justify-content: center;
 }
 .element-portfolio {
+  position: relative;
   width: 370px;
   height: 404px;
   display: block;
   margin-right: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .element-portfolio:nth-child(3n) {
   margin-right: 0px;
@@ -516,12 +520,35 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color-text);
 }
+.element-portfolio {
+  margin-bottom: 30px;
+}
+.element-portfolio:hover .portfolio-overlay {
+  opacity: 1;
+}
+.portfolio-overlay {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  width: 370px;
+  height: 404px;
+  top: 0px;
+  left: 0px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 .hover-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 294px;
+  text-align: center;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--tex-taitle-light);
-  width: 322px;
-  height: 168px;
+  background: rgba(33, 150, 243, 0.9);
 }
