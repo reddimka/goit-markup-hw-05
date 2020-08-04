@@ -94,6 +94,22 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.navigation-list-item .current {
+  color: var(--hover-color);
+  position: relative;
+  display: block;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-color);
+}
 .navigation-list-link,
 .header-address {
   padding-top: 32px;
@@ -102,10 +118,9 @@ body {
 .icon-header {
   display: flex;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-address-item:hover {
-  fill: var(--hover-color);
-}
+
 .navigation-list-link,
 .header-mail,
 .header-tel {
@@ -114,6 +129,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-taitle-dark);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-mail,
+.header-tel {
+  display: flex;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-mail:hover,
+.header-tel:hover {
+  fill: var(--hover-color);
 }
 .link:hover,
 .link:focus,
@@ -165,6 +191,10 @@ body {
   height: 50px;
   border-radius: 4px;
   border: 0px;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover {
+  background: #188ce8;
 }
 .overlay {
   display: flex;
