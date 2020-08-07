@@ -400,7 +400,6 @@ body {
 .footer-address {
   padding-left: 214px;
   padding-top: 60px;
-  padding-bottom: 161px;
   display: flex;
   flex-direction: column;
   padding-right: 69px;
@@ -411,7 +410,8 @@ body {
 .contacts:not(:last-child) {
   margin-bottom: 9px;
 }
-.contacts {
+.contacts-list {
+  margin-bottom: 60px;
 }
 .logo-footer {
   font-family: var(--secondary-font);
